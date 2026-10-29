@@ -1,19 +1,39 @@
-FRUIT QUALITY AI — PROFESSIONAL STREAMLIT APP
 
-FILES
-- app.py: app source
-- fruit_quality_model.keras: copy your existing trained model into this folder before running
+# 🍎 Fruit Quality AI
 
-SETUP
-1. Put app.py and fruit_quality_model.keras in the same folder.
-2. Open Command Prompt in that folder.
-3. Run: python -m streamlit run app.py
-4. Open http://localhost:8501
+A deep learning application that classifies fruit images as Fresh or Rotten using a trained TensorFlow/Keras model.
 
-NOTES
-- Create an account from the Create account tab, then sign in.
-- Local user accounts and prediction history are stored in fruit_quality_users.db.
-- The class label order in get_label_names() must match the label indices used in training.
-  It currently assumes index 0 = Fresh and index 1 = Rotten. Verify against your notebook's
-  dataset label names before relying on results.
-- This is a local student demo. Do not expose it publicly without stronger production security.
+## Features
+- Upload a fruit image for prediction
+- Display the predicted class and confidence
+- User registration and login
+- Prediction history
+
+## Technologies Used
+- Python
+- TensorFlow / Keras
+- NumPy
+- Pillow
+- Streamlit
+- SQLite
+
+## Installation and Setup
+
+1. Clone this repository.
+2. Install the required libraries:
+
+   `python -m pip install -r requirements.txt`
+
+3. Run the application:
+
+   `python -m streamlit run app.py`
+
+4. Open the local URL displayed in your terminal.
+
+## Project Files
+- `app.py` — Streamlit application
+- `fruit_quality_model.keras` — Trained model
+- `requirements.txt` — Required Python libraries
+
+## Note
+This project is intended for educational and demonstration purposes. Prediction accuracy depends on the model and the input image.
