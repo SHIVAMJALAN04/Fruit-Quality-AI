@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+fruit_quality_users.db
+.env
+.streamlit/secrets.toml
